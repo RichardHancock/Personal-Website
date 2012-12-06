@@ -1,0 +1,102 @@
+
+body {
+	font-family: Calibri;
+	color: #ffffff;
+	background-color:rgb(90,90,90);
+}
+#Banner{
+	width: 1000px;
+	height: 100px;
+	background-color: #313230;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+#Nav{
+	width: 1000px;
+	height: auto;
+	background-color: #313230;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+#Featured{
+	width: 1000px;
+	height: 275px;
+	background-color: #313230;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+#FeaturedImage{
+	width: 600px;
+	height: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 12.5px
+}
+#Content{
+	width: 1000px;
+	height: auto;
+	background-color: #313230;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding-bottom: 25px
+} 
+#Content p{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#Content h3{
+	padding-left: 15px;
+	padding-top: 10px;
+}
+#Content form{
+	padding-left: 15px;
+	padding-top: 15px;
+}
+#Footer{
+	width: 1000px;
+	height: 25px;
+	background-color: #313230;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Video{
+	width: 853px;
+	height: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+} 
+.ContentImage{
+	float:right;
+	padding-right: 5px;
+}
+
+/* Menu Styling */
+ul {
+	font-family: Calibri;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li {
+	display: inline-block;
+}
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 15px 10px 15px;
+	margin-right: 1px;
+}
+ul li a:hover {
+	background: #0F5476
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
