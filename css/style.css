@@ -12,6 +12,14 @@ body {
 	margin-right: auto;
 	margin-bottom: 10px;
 }
+h1{
+	margin:0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
 #Nav{
 	width: 1000px;
 	height: auto;
@@ -22,35 +30,37 @@ body {
 }
 #Featured{
 	width: 1000px;
-	height: 275px;
+	height: 300px;
 	background-color: #313230;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 }
-#FeaturedImage{
-	width: 600px;
-	height: 250px;
+.slider-wrapper{
+	width: 980px;
+	height: 280px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 12.5px
+	padding-top: 10px
 }
 #Content{
 	width: 1000px;
 	height: auto;
 	background-color: #313230;
+	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 	padding-bottom: 25px
 } 
 #Content p{
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 20px;
+	padding-right: 10px;
 }
 #Content h3{
-	padding-left: 15px;
-	padding-top: 10px;
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 10px;
 }
 #Content form{
 	padding-left: 15px;
@@ -58,10 +68,16 @@ body {
 }
 #Footer{
 	width: 1000px;
-	height: 25px;
+	height: auto;
 	background-color: #313230;
 	margin-left: auto;
 	margin-right: auto;
+}
+#Footer p{
+	margin:0; /*Needed to stop weird auto margin breaking the layout*/
+	text-align: center;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
 }
 #Video{
 	width: 853px;
@@ -72,7 +88,8 @@ body {
 } 
 .ContentImage{
 	float:right;
-	padding-right: 5px;
+	padding-right: 10px;
+	padding-left: 10px
 }
 
 /* Menu Styling */
@@ -95,8 +112,4 @@ ul li a {
 }
 ul li a:hover {
 	background: #0F5476
-}
-.center {
-	margin-left: auto;
-	margin-right: auto;
 }
