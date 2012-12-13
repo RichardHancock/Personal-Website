@@ -22,11 +22,33 @@ h1{
 }
 #Nav{
 	width: 1000px;
-	height: auto;
+	height: 53px;
 	background-color: #313230;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
+	
+}
+#Navleft{
+	width: 400px;
+	margin: 0;
+	float: left;
+}
+#Navcenter{
+	width: 350px;
+	margin: 0;
+	float: left;
+}
+#Navright{
+	width: 250px;
+	margin: 0;
+	float: right;
+}
+#Navright input{
+	margin-top: 15px;
+}
+#Navright .text{
+	margin-left: 16px;
 }
 #Featured{
 	width: 1000px;
@@ -54,6 +76,7 @@ h1{
 	padding-bottom: 25px
 } 
 #Content p{
+	margin: 0;
 	padding-left: 20px;
 	padding-right: 10px;
 }
@@ -79,7 +102,7 @@ h1{
 	padding-top: 7.5px;
 	padding-bottom: 7.5px;
 }
-#Video{
+#Content .Video{
 	width: 853px;
 	height: 480px;
 	margin-left: auto;
@@ -93,23 +116,33 @@ h1{
 }
 
 /* Menu Styling */
-ul {
+#Navleft ul {
 	font-family: Calibri;
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-ul li {
+#Navleft ul li {
 	display: inline-block;
 }
-ul li a {
+#Navleft ul li a {
 	display: block;
 	text-decoration: none;
 	color: #ffffff;
-	padding: 10px 15px 10px 15px;
+	padding: 18px 15px 18px 15px;
 	margin-right: 1px;
 }
-ul li a:hover {
+#Navleft ul li a:hover {
 	background: #0F5476
+}
+
+/* Social Icons */
+#Navcenter ul {
+	list-style: none;
+	margin: 0;
+	margin-top: 2px;
+}
+#Navcenter li {
+	display: inline-block;
 }
