@@ -4,7 +4,7 @@ body {
 	color: #ffffff;
 	background-color:rgb(90,90,90);
 }
-#Banner{
+#Banner {
 	width: 1000px;
 	height: 100px;
 	background-color: #313230;
@@ -12,7 +12,10 @@ body {
 	margin-right: auto;
 	margin-bottom: 10px;
 }
-h1{
+p {
+	margin: 0;
+}
+h1 {
 	margin:0;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -20,7 +23,7 @@ h1{
 	color: white;
 	text-decoration: none;
 }
-#Nav{
+#Nav {
 	width: 1000px;
 	height: 53px;
 	background-color: #313230;
@@ -29,28 +32,28 @@ h1{
 	margin-bottom: 10px;
 	
 }
-#Navleft{
+#Navleft {
 	width: 400px;
 	margin: 0;
 	float: left;
 }
-#Navcenter{
+#Navcenter {
 	width: 350px;
 	margin: 0;
 	float: left;
 }
-#Navright{
+#Navright {
 	width: 250px;
 	margin: 0;
 	float: right;
 }
-#Navright input{
+#Navright input {
 	margin-top: 15px;
 }
-#Navright .text{
+#Navright .text {
 	margin-left: 16px;
 }
-#Featured{
+#Featured {
 	width: 1000px;
 	height: 300px;
 	background-color: #313230;
@@ -58,14 +61,14 @@ h1{
 	margin-right: auto;
 	margin-bottom: 10px;
 }
-.slider-wrapper{
+.slider-wrapper {
 	width: 980px;
 	height: 280px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 10px
-}
-#Content{
+} 
+#Content {
 	width: 1000px;
 	height: auto;
 	background-color: #313230;
@@ -73,51 +76,58 @@ h1{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-	padding-bottom: 25px
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
 } 
-#Content p{
-	margin: 0;
+#Content p {
 	padding-left: 20px;
 	padding-right: 10px;
 }
-#Content h3{
+#Content .title {
 	margin: 0;
-	padding-top: 15px;
 	padding-left: 10px;
 }
-#Content form{
-	padding-left: 15px;
-	padding-top: 15px;
+#Content a {
+	color: #ee0000;
+	text-decoration: none;
 }
-#Footer{
+#Content .intro {
+	padding-top: 10px;
+}
+#Footer {
 	width: 1000px;
 	height: auto;
 	background-color: #313230;
 	margin-left: auto;
 	margin-right: auto;
 }
-#Footer p{
+#Footer p {
 	margin:0; /*Needed to stop weird auto margin breaking the layout*/
 	text-align: center;
 	padding-top: 7.5px;
 	padding-bottom: 7.5px;
 }
-#Content .Video{
+#Content .Video {
 	width: 853px;
 	height: 480px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 25px;
 } 
-.ContentImage{
+.ContentImage {
 	float:right;
 	padding-right: 10px;
 	padding-left: 10px
 }
-
+.links {
+	list-style: square;
+}
+.linkHeadings {
+	padding-left: 20px;
+}
 /* Menu Styling */
 #Navleft ul {
-	font-family: Calibri;
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
@@ -132,10 +142,30 @@ h1{
 	color: #ffffff;
 	padding: 18px 15px 18px 15px;
 	margin-right: 1px;
+	white-space: nowrap;
 }
 #Navleft ul li a:hover {
 	background: #0F5476
 }
+/* Code for dropdown menus (Not Used Currently)
+#Navleft li ul {
+	display: none;
+}
+#Navleft li:hover ul {
+	display: block;
+	position: absolute;
+	z-index: 3;
+}
+#Navleft li:hover li {
+	float: none;
+}
+#Navleft li:hover a { 
+	background: #3b3b3b; 
+}
+#Navleft li:hover li a:hover {
+	background: #0091C7;
+}
+*/ 
 
 /* Social Icons */
 #Navcenter ul {
@@ -145,4 +175,137 @@ h1{
 }
 #Navcenter li {
 	display: inline-block;
+}
+
+/* Projects Display */
+#Content .projectWrapper {
+	background-color: #4E4E4E;
+	width: 980px;
+	height: 360px;
+	padding-top: 10px;
+	margin-left: 10px;
+	position: relative;
+	
+}
+#Content .projectTitle {
+	background-color: #313230;
+	width: 585px;
+	height: 30px;
+	margin-left: 10px;
+	position: absolute;
+	top: 10px;
+}
+#Content .projectTitle h3 {
+	margin: 0;
+	padding-top: 3px;
+	padding-left: 10px; 
+}
+#Content .projectStage {
+	background-color: #313230;
+	width: 370px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 600px;
+
+}
+#Content .projectStage p {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#Content .projectLanguage {
+	background-color: #313230;
+	width: 585px;
+	height: 40px;
+	margin-left: 10px;
+	position: absolute;
+	top: 45px;
+}
+#Content .projectLanguage p {
+	margin-left: 10px;
+	margin-top: 9px;
+}
+#Content .projectButtons {
+	background-color: #313230;
+	width: 370px;
+	height: 40px;
+	position: absolute;
+	top: 45px;
+	left: 600px;
+}
+#Content .projectButtons a {
+	/* Forces colour change from default red */
+	color: #ffffff;
+}
+#Content .projectButtons ul {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#Content .projectButtons ul li {
+	display: inline-block;
+}
+#Content .projectButtons ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 11px 15px 11px 15px;
+	margin-right: 1px;
+	white-space: nowrap;
+}
+#Content .projectButtons ul li a:hover {
+	background: #0F5476
+}
+#Content .projectDescription {
+	background-color: #313230;
+	width: 585px;
+	height: 270px;
+	margin-left: 10px;
+	position: absolute;
+	top: 90px;
+}
+#Content .projectDescription h4 {
+	margin: 0;
+	margin-top: 5px;
+}
+#Content .projectPicture {
+	background-color: #313230;
+	width: 370px;
+	height: 270px;
+	position: absolute;
+	top: 90px;
+	left: 600px;
+}
+#Content .projectPicture img {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+/* Contact Form and Page */
+.contactText {
+	width: 550px;
+	height: 300px;
+}
+.contactText dl {
+	padding-left: 20px;
+}
+.contactText dt {
+	font-weight: bold;
+}
+.contactWrapper {
+	width: 400px;
+	height: auto;
+	position: absolute;
+	left: 600px;
+}
+.contactWrapper span {
+	color: #ee0000;
+	font-weight: bold;
+}
+.errorMsg {
+	padding-left: 5px;
+}
+.resultMsg {
+	display: block;
+	padding-top: 5px;
 }

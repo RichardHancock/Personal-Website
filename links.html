@@ -1,0 +1,71 @@
+<!DOCTYPE html>       
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Space Crazy: Links</title>
+		<link rel="stylesheet" href="css/style.css" >
+		<script src="js/functions.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div id="Banner"><a href="home.html"><h1>Space Crazy Productions</h1></a></div>
+		<div id="Nav">
+			<div id="Navleft">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="video.html">Videos</a></li>
+					<li><a href="links.html">Links</a></li>
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+			</div>
+			<div id="Navcenter">
+				<!-- Social Icons -->
+				<ul>
+					<li><img src="res/icons/Facebook.png" onclick="social('Facebook')" alt="Facebook"/></li>
+					<li><img src="res/icons/Twitter.png" onclick="social('Twitter')" alt="Twitter"/></li>
+					<li><img src="res/icons/GooglePlus.png" onclick="social('Google+')" alt="Google+"/></li>
+					<li><img src="res/icons/YouTube.png" onclick="social('YouTube')" alt="YouTube"/></li>
+					<li><img src="res/icons/LinkedIn.png" onclick="social('LinkedIn')" alt="LinkedIn"/></li>
+					<li><img src="res/icons/GitHub.png" onclick="social('GitHub')" alt="GitHub"/></li>
+				</ul>
+			</div>
+			<div id="Navright">
+				<input type="text" class="text" name="search" placeholder="Search Term"/> 
+				<input type="button" onclick="search()" name="searchbutton" value="Search" />
+			</div>
+		</div>
+		<div id="Content">
+			<p class="intro">
+				These are some helpful websites I am using for software development and to learn programming:
+			</p>
+			<h3 class="linkHeadings">Cloud Storage</h3>
+			<ul class="links">
+				<li><a href="http://www.dropbox.com">Dropbox</a></li>
+				<li><a href="http://www.drive.google.com">Google Drive</a></li>
+				<li><a href="http://www.getpocket.com">Pocket</a> - Great service for saving links for later, accessible from most devices.</li>
+				<li><a href="http://www.skydrive.com">SkyDrive</a></li>
+			</ul>
+			<h3 class="linkHeadings">Programming</h3>
+			<ul class="links">
+				<li><a href="http://www.github.com/">GitHub</a> - Git version control repository host, private repo's cost money.</li>
+				<li><a href="http://www.thenewboston.org/tutorials.php">The New Boston</a> - Varied tutorials about programming and other computer programs.</li>
+				<li><a href="http://www.udacity.com">Udacity</a> - Intro to Computer Science Course with very well produced videos and programming challenges. Uses Python.</li>
+			</ul>
+			<h3 class="linkHeadings">Web Development</h3>
+			<ul class="links">
+				<li><a href="http://www.codecademy.com">Codecademy</a> - Good practice in web development languages, JavaScript and Python.</li>
+				<li><a href="http://www.htmldog.com">HTML Dog</a> - Good reference for web development.</li>
+				<li><a href="http://www.webplatform.org">Web Platform</a> - Website full of references and tutorials from all major web companies collaborating.</li>
+			</ul>
+			<h3 class="linkHeadings">Other</h3>
+			<ul class="links">
+				<li><a href="http://www.trello.com">Trello</a> - Good project management tool.</li>
+			</ul>
+		</div>
+		<div id="Footer">
+			<p style="text-align:center;">Copyright 2012 Richard Hancock</p>
+		</div>
+	</body>
+</html>
