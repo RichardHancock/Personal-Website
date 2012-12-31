@@ -103,7 +103,7 @@ h1 {
 	margin-right: auto;
 }
 #Footer p {
-	margin:0; /*Needed to stop weird auto margin breaking the layout*/
+	margin: 0; /*Needed to stop weird auto margin breaking the layout*/
 	text-align: center;
 	padding-top: 7.5px;
 	padding-bottom: 7.5px;
@@ -184,9 +184,13 @@ h1 {
 	height: 360px;
 	padding-top: 10px;
 	margin-left: 10px;
-	position: relative;
-	
+	position: relative;	
 }
+#Content .projectWrapper p{
+	padding: 0;
+	margin-left: 10px;
+}
+
 #Content .projectTitle {
 	background-color: #313230;
 	width: 585px;
@@ -200,6 +204,7 @@ h1 {
 	padding-top: 3px;
 	padding-left: 10px; 
 }
+
 #Content .projectStage {
 	background-color: #313230;
 	width: 370px;
@@ -209,10 +214,13 @@ h1 {
 	left: 600px;
 
 }
-#Content .projectStage p {
+#Content .projectStage h4 {
+	display: inline-block;
+	margin: 0;
 	margin-left: 10px;
 	margin-top: 5px;
 }
+
 #Content .projectLanguage {
 	background-color: #313230;
 	width: 585px;
@@ -221,10 +229,13 @@ h1 {
 	position: absolute;
 	top: 45px;
 }
-#Content .projectLanguage p {
+#Content .projectLanguage h4 {
+	display: inline-block;
+	margin: 0;
 	margin-left: 10px;
 	margin-top: 9px;
 }
+
 #Content .projectButtons {
 	background-color: #313230;
 	width: 370px;
@@ -238,7 +249,7 @@ h1 {
 	color: #ffffff;
 }
 #Content .projectButtons ul {
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -249,13 +260,17 @@ h1 {
 #Content .projectButtons ul li a {
 	display: block;
 	text-decoration: none;
-	padding: 11px 15px 11px 15px;
+	padding: 9px 15px 9px 15px;
 	margin-right: 1px;
 	white-space: nowrap;
 }
 #Content .projectButtons ul li a:hover {
 	background: #0F5476
 }
+#Content .projectButtons ul li a[href="#"]{
+	text-decoration: line-through;
+}
+
 #Content .projectDescription {
 	background-color: #313230;
 	width: 585px;
@@ -267,7 +282,13 @@ h1 {
 #Content .projectDescription h4 {
 	margin: 0;
 	margin-top: 5px;
+	margin-left: 10px
 }
+#Content .projectDescription p {
+	padding: 0;
+	margin-left: 10px;
+}
+
 #Content .projectPicture {
 	background-color: #313230;
 	width: 370px;
