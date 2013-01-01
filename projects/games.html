@@ -4,8 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Space Crazy: Games</title>
-		<link rel="stylesheet" href="../css/style.css" >
+		<link rel="stylesheet" href="../css/style.css">
 		<script src="../js/functions.js" type="text/javascript"></script>
+		<!-- Lightbox Requirements -->
+		<link rel="stylesheet" href="../css/lightbox.css">
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="../js/lightbox.js" type="text/javascript"></script>
+		
 	</head>
 
 	<body>
@@ -39,7 +44,7 @@
 		<div id="Content">
 			<!-- Projects Code -->
 			<!--<h3>Pong Clone</h3> Add after style confirmed-->
-			<div class="projectWrapper">
+			<div id="MillionaireQuiz" class="projectWrapperFirst">
 				<div class="projectTitle"><h3>Millionaire Quiz</h3></div>
 				<div class="projectStage"><h4>Stage:</h4> <span>Working Prototype</span></div>
 	
@@ -53,16 +58,81 @@
 				<div class="projectDescription">
 					<h4>Description:</h4>
 					<p>
-						Words
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim, at commodo nisl. Praesent posuere adipiscing augue, vitae euismod velit ultricies eget. Vivamus in fringilla sapien. Suspendisse potenti. Nam ullamcorper imperdiet nibh, sit amet auctor nisi faucibus faucibus. Integer sapien velit, cursus non feugiat eget, aliquet eget sapien. Sed sit amet sapien quis massa facilisis dictum. Curabitur faucibus ipsum nec diam vehicula iaculis eleifend lacus consequat. Sed quis turpis quam. Phasellus a nisl ligula, et ullamcorper mi.
+					</p>
+					<p>
+						Sed tristique suscipit eros ac dictum. Vestibulum et fermentum justo. Nam id gravida eros. Sed eget tortor arcu. Aliquam ut ante at sapien condimentum dictum consectetur et turpis. Pellentesque vitae magna et ipsum aliquam consectetur a a ante. Suspendisse porttitor aliquet odio, eu ullamcorper elit pharetra ut. Pellentesque a hendrerit odio. Cras at lorem id mauris hendrerit ultricies.
 					</p>
 				</div>
 				<div class="projectPicture">
-					<img src="http://dummyimage.com/360x260/ffffff/000000"/>
+					<a href="../res/projects/millionaire/basic_ui_layout_full.jpg" rel="lightbox[millionaire]"><img src="../res/projects/millionaire/basic_ui_layout_small.jpg" alt="Early screenshot of Millionaire quiz interface."/></a>
+					<a href="../res/projects/millionaire/working_prototype_full.jpg" rel="lightbox[millionaire]"></a>
+					<p>Click image to enlarge it and view more pictures.</p>
 				</div>
-			</div>	
-			<!--<img class="ContentImage" src="../res/Millionaire_Interface_2.jpg">-->
-			<br>
+			</div>
+
+			<div id="Pong" class="projectWrapper">
+				<div class="projectTitle"><h3>Pong</h3></div>
+				<div class="projectStage"><h4>Stage:</h4> <span>Completed</span></div>
+	
+				<div class="projectLanguage"><h4>Languages Used:</h4> <span>Visual Basic</span></div>
+				<div class="projectButtons"><!-- Source and EXE button aligned right -->
+					<ul>
+						<li><a href="#" onclick="notAvailable()" title="Not Available">Source</a></li>
+						<li><a href="#" onclick="notAvailable()" title="Coming Soon!">Download</a></li>
+					</ul>
+				</div>
+				<div class="projectDescription">
+					<h4>Description:</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim, at commodo nisl. Praesent posuere adipiscing augue, vitae euismod velit ultricies eget. Vivamus in fringilla sapien. Suspendisse potenti. Nam ullamcorper imperdiet nibh, sit amet auctor nisi faucibus faucibus. Integer sapien velit, cursus non feugiat eget, aliquet eget sapien. Sed sit amet sapien quis massa facilisis dictum. Curabitur faucibus ipsum nec diam vehicula iaculis eleifend lacus consequat. Sed quis turpis quam. Phasellus a nisl ligula, et ullamcorper mi.
+					</p>
+					<p>
+						Sed tristique suscipit eros ac dictum. Vestibulum et fermentum justo. Nam id gravida eros. Sed eget tortor arcu. Aliquam ut ante at sapien condimentum dictum consectetur et turpis. Pellentesque vitae magna et ipsum aliquam consectetur a a ante. Suspendisse porttitor aliquet odio, eu ullamcorper elit pharetra ut. Pellentesque a hendrerit odio. Cras at lorem id mauris hendrerit ultricies.
+					</p>
+				</div>
+				<div class="projectPicture">
+					<a href="../res/projects/pong/pong_screenshot_full.jpg" rel="lightbox[pong]"><img src="../res/projects/pong/pong_screenshot_small.jpg" alt="Early screenshot of Millionaire quiz interface."/></a>
+					<p>Click image to enlarge it and view more pictures.</p>
+				</div>
+			</div>
+
+			<div id="BasicBattlePrototype" class="projectWrapper">
+				<div class="projectTitle"><h3>Basic Battle Prototype</h3></div>
+				<div class="projectStage"><h4>Stage:</h4> <span>Working, Improvements Planned</span></div>
+	
+				<div class="projectLanguage"><h4>Languages Used:</h4> <span>Visual Basic</span></div>
+				<div class="projectButtons"><!-- Source and EXE button aligned right -->
+					<ul>
+						<li><a href="#" onclick="notAvailable()" title="Not Available">Source</a></li>
+						<li><a href="#" onclick="notAvailable()" title="Coming Soon!">Download</a></li>
+					</ul>
+				</div>
+				<div class="projectDescription">
+					<h4>Description:</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim, at commodo nisl. Praesent posuere adipiscing augue, vitae euismod velit ultricies eget. Vivamus in fringilla sapien. Suspendisse potenti. Nam ullamcorper imperdiet nibh, sit amet auctor nisi faucibus faucibus. Integer sapien velit, cursus non feugiat eget, aliquet eget sapien. Sed sit amet sapien quis massa facilisis dictum. Curabitur faucibus ipsum nec diam vehicula iaculis eleifend lacus consequat. Sed quis turpis quam. Phasellus a nisl ligula, et ullamcorper mi.
+					</p>
+					<p>
+						Sed tristique suscipit eros ac dictum. Vestibulum et fermentum justo. Nam id gravida eros. Sed eget tortor arcu. Aliquam ut ante at sapien condimentum dictum consectetur et turpis. Pellentesque vitae magna et ipsum aliquam consectetur a a ante. Suspendisse porttitor aliquet odio, eu ullamcorper elit pharetra ut. Pellentesque a hendrerit odio. Cras at lorem id mauris hendrerit ultricies.
+					</p>
+				</div>
+				<div class="projectPicture">
+					<a href="../res/projects/battlePrototype/version1_battle_screen_full.jpg" rel="lightbox[battlePrototype]"><img src="../res/projects/battlePrototype/version1_battle_screen_small.jpg" alt="Screenshot of Battle Prototype interface."/></a>
+					<a href="../res/projects/battlePrototype/version1_results_screen_full.jpg" rel="lightbox[battlePrototype]"></a>
+					<a href="../res/projects/battlePrototype/version2_battle_screen_full.jpg" rel="lightbox[battlePrototype]"></a>
+					<p>Click image to enlarge it and view more pictures.</p>
+				</div>
+			</div>
 		</div>
+
+		<!-- Pretty Photo Ready --> 
+		<script type="text/javascript" charset="utf-8">
+  			$(document).ready(function(){
+    			$("a[rel^='prettyPhoto']").prettyPhoto();
+  			});
+		</script>
+
 		<div id="Footer">
 			<p style="text-align:center;">Copyright 2012 Richard Hancock</p>
 		</div>

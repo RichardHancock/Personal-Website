@@ -181,15 +181,32 @@ h1 {
 #Content .projectWrapper {
 	background-color: #4E4E4E;
 	width: 980px;
-	height: 360px;
+	height: 380px;
 	padding-top: 10px;
 	margin-left: 10px;
-	position: relative;	
+	position: relative;
+	margin-top: 10px	
 }
 #Content .projectWrapper p{
 	padding: 0;
 	margin-left: 10px;
 }
+
+/* Way to stop extra padding at top
+without using IE incompatible selectors */
+#Content .projectWrapperFirst {
+	background-color: #4E4E4E;
+	width: 980px;
+	height: 380px;
+	padding-top: 10px;
+	margin-left: 10px;
+	position: relative;
+}
+#Content .projectWrapperFirst p{
+	padding: 0;
+	margin-left: 10px;
+}
+/* End of Bypass */
 
 #Content .projectTitle {
 	background-color: #313230;
@@ -274,7 +291,7 @@ h1 {
 #Content .projectDescription {
 	background-color: #313230;
 	width: 585px;
-	height: 270px;
+	height: 290px;
 	margin-left: 10px;
 	position: absolute;
 	top: 90px;
@@ -287,12 +304,13 @@ h1 {
 #Content .projectDescription p {
 	padding: 0;
 	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #Content .projectPicture {
 	background-color: #313230;
 	width: 370px;
-	height: 270px;
+	height: 290px;
 	position: absolute;
 	top: 90px;
 	left: 600px;
@@ -300,6 +318,11 @@ h1 {
 #Content .projectPicture img {
 	margin-left: 5px;
 	margin-top: 5px;
+	border: none;
+}
+#Content .projectPicture p {
+	font-size: 9pt;
+	padding-top: 2px;
 }
 
 /* Contact Form and Page */
