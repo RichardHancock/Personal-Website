@@ -9,13 +9,15 @@
 	</head>
 
 	<body>
-		<div id="Banner"><a href="home.html"><h1>Space Crazy Productions</h1></a></div>
+		<div id="Banner">
+			<a href="home.html"><h1>Space Crazy Productions</h1></a>
+			<h2>Site Under Construction</h2>
+		</div>
 		<div id="Nav">
 			<div id="Navleft">
 				<ul>
 					<li><a href="home.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
-					<li><a href="video.html">Videos</a></li>
 					<li><a href="links.html">Links</a></li>
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
@@ -70,11 +72,11 @@
 				$error3 = True;
 			}
 			// Subject chosen Validation
-			if($service == "Please Select") {
+			if($subject == "Please Select") {
 				$error4 = True;
-				if($service == "Legal Message") {
-					$mail_to = "legal@spacecrazyproductions.com";
-				}
+			}
+			if($subject == "Legal Message") {
+				$mail_to = "legal@spacecrazyproductions.com";
 			}
 			// Message longer than 0 Validation
 			if(strlen($message) <= 0) {
@@ -95,9 +97,9 @@
 			<div class="contactWrapper">
 				<form action="contact.php" method="post">
 					Name: <br>
-					<input type="text" placeholder="Your Name" name="name"><span class="errorMsg"><?php if($error1) {echo "Please enter your name.";} ?></span><br>
+					<input type="text" placeholder="Your Name" name="name"><span class="errorMsg"><?php if($error1) {echo "Please enter your name";} ?></span><br>
 					Email: <br>
-					<input type="text" placeholder="Your Email" name="email"><span class="errorMsg"><?php if($error2) {echo "Please enter your Email Address.";} elseif($error3) {echo "Please enter a valid Email Address.";} ?></span><br>
+					<input type="text" placeholder="Your Email" name="email"><span class="errorMsg"><?php if($error2) {echo "Please enter your Email Address";} elseif($error3) {echo "Please enter a valid Email Address";} ?></span><br>
 					Subject: <br>
 					<select name="subject">
 						<option value="Please Select">Select One</option>
@@ -105,14 +107,14 @@
 						<option value="Web Bug Report">Website Problem/Bug</option>
 						<option value="Program Bug Report">Program/Game Problem/Bug</option>
 						<option value="Legal Message">Legal Issues</option>
-					</select><span class="errorMsg"><?php if($error4) {echo "Please choose a subject.";} ?></span><br>
+					</select><span class="errorMsg"><?php if($error4) {echo "Please choose a subject";} ?></span><br>
 					Message: <br>
 					<textarea name="message" placeholder="Your Message" rows="5" cols="20"></textarea>
-					<span class="errorMsg"><?php if($error5) {echo "Please enter your message.";} ?></span><br>
+					<span class="errorMsg"><?php if($error5) {echo "Please enter your message";} ?></span><br>
 					<input type="hidden" name="submitted" value=1>
 					<input type="submit" value="Submit">
 					<input type="reset" value="Reset"><br>
-					<span class="resultMsg"><?php if($result == 1) {echo "Please correct the form and re-submit it.";} 
+					<span class="resultMsg"><?php if($result == 1) {echo "Please correct the form and re-submit it";} 
 					elseif($result == 2) {echo "E-mail sent successfully";} ?></span>
 				</form>
 			</div>
@@ -133,7 +135,7 @@
 		</div>
 
 		<div id="Footer">
-			<p style="text-align:center;">Copyright 2012 Richard Hancock</p>
+			<p>&copy; 2013 Richard Hancock</p>
 		</div>
 	</body>
 </html>
